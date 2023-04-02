@@ -11,4 +11,4 @@ import TuitController from "./controllers/tuits/tuits-controller.js";
 HelloController(app);
 UserController(app);
 TuitController(app);
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
