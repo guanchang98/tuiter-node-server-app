@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-const schema = mongoose.Schema({
+const schema = new mongoose.Schema({
     tuit: String,
     likes: Number,
     liked: Boolean,
 }, {
-    collections: tuits,
+    collection: "tuits",
 });
 
 export default schema;
